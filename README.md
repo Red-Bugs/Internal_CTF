@@ -3,7 +3,7 @@
  And My Profile on TryHackMe : https://tryhackme.com/p/osaid.ahmed.soh
 ---
 
-### Internal ctf
+### Internal CTF
 
 ![](222b3e855f88a482c1267748f76f90e0.jpeg)
 
