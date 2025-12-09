@@ -3,7 +3,7 @@
 
 ### Internal ctf
 
-![](https://cdn-images-1.medium.com/max/1680/1*oG_2PvyNNQHQ6ZBkF2osdQ.jpeg)
+![]([https://cdn-images-1.medium.com/max/1680/1*oG_2PvyNNQHQ6ZBkF2osdQ.jpeg](https://cdn-images-1.medium.com/v2/resize:fit:1120/1*gzoxMhPRnanqDIDrbVTFyA.png))
 
 ### 1. نجهز ال ip
 
@@ -75,7 +75,7 @@ Finished
 
 log in اما ننزل نلاقي
 
-![](https://cdn-images-1.medium.com/max/1120/1*LGUjhEvPmZhvbL39Rn0rTQ.png)
+![]([https://cdn-images-1.medium.com/max/1120/1*LGUjhEvPmZhvbL39Rn0rTQ.png](https://cdn-images-1.medium.com/v2/resize:fit:1120/1*gzoxMhPRnanqDIDrbVTFyA.png))
 
 بعد اما ندخل عليه ونجرب ندخل الحساب نلاقي انه بيتأكد من Username الاول فبيظهر الخطأ ده
 
