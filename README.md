@@ -3,7 +3,7 @@
 
 ### Internal ctf
 
-![]([https://cdn-images-1.medium.com/max/1680/1*oG_2PvyNNQHQ6ZBkF2osdQ.jpeg](https://cdn-images-1.medium.com/v2/resize:fit:1120/1*gzoxMhPRnanqDIDrbVTFyA.png))
+![](222b3e855f88a482c1267748f76f90e0.jpeg)
 
 ### 1. نجهز ال ip
 
@@ -11,7 +11,7 @@
 sudo nano /etc/hosts
 ```
 
-![](https://cdn-images-1.medium.com/max/1120/1*RBnHRAbipGYhQWLnd-fEZg.png)
+![](https://github.com/Red-Bugs/Internal-ctf/blob/72311f2b3961ab492f0f545890cc0c86d5cafc79/Screenshot%202025-12-07%20213626.png)
 
 2.scan
 ```
@@ -71,15 +71,15 @@ Finished
 
 هندخل علي /blog
 
-![](https://cdn-images-1.medium.com/max/1120/1*1VR8z_wfjNJaoenpF67fqQ.png)
+![](https://github.com/Red-Bugs/Internal-ctf/blob/72311f2b3961ab492f0f545890cc0c86d5cafc79/Screenshot%202025-12-07%20214654.png)
 
 log in اما ننزل نلاقي
 
-![]([https://cdn-images-1.medium.com/max/1120/1*LGUjhEvPmZhvbL39Rn0rTQ.png](https://cdn-images-1.medium.com/v2/resize:fit:1120/1*gzoxMhPRnanqDIDrbVTFyA.png))
+![](https://github.com/Red-Bugs/Internal-ctf/blob/72311f2b3961ab492f0f545890cc0c86d5cafc79/Screenshot%202025-12-07%20214916.png)
 
 بعد اما ندخل عليه ونجرب ندخل الحساب نلاقي انه بيتأكد من Username الاول فبيظهر الخطأ ده
 
-![](https://cdn-images-1.medium.com/max/1120/1*gzoxMhPRnanqDIDrbVTFyA.png)
+![](https://github.com/Red-Bugs/Internal-ctf/blob/72311f2b3961ab492f0f545890cc0c86d5cafc79/Screenshot%202025-12-07%20215219.png)
 
 فهنخمن Username بادوات زي hydra , wpscan , Burp Suite بس انا هستخدم الاسهل
 ```
@@ -88,7 +88,7 @@ log in اما ننزل نلاقي
 └─$ wpscan --url http://internal.thm/blog/wp-login.php -e u 
 
 ```
-![](https://cdn-images-1.medium.com/max/1120/1*6yGd7IGL7ryzEoeuUwRSEQ.png)
+![](https://github.com/Red-Bugs/Internal-ctf/blob/72311f2b3961ab492f0f545890cc0c86d5cafc79/Screenshot%202025-12-07%20223843.png)
 
 ولو مشتغلش او عملت كثير وما اشتغل اعمل — no-update
 
@@ -103,32 +103,29 @@ wpscan --url http://internal.thm/blog/wp-login.php -e u --no-update
 └─$ wpscan --url http://internal.thm/blog/wp-login.php --passwords /usr/share/wordlists/rockyou.txt --usernames admin
 ```
 
-![](https://cdn-images-1.medium.com/max/1120/1*S7aJP5W1beh0xRoWUA5wdg.png)
+![](https://github.com/Red-Bugs/Internal-ctf/blob/72311f2b3961ab492f0f545890cc0c86d5cafc79/Screenshot%202025-12-08%20145053.png)
 
 واخيرا تم تسجيل الدخول
 
-![](https://cdn-images-1.medium.com/max/1120/1*l-GlDWbhwfVFEOaJ5-bEmg.png)
+![](https://github.com/Red-Bugs/Internal-ctf/blob/069c96cbaaff2d79826e8178f1735d71d2cf77b8/1_l-GlDWbhwfVFEOaJ5-bEmg.png)
 
 نذهب الي The email is correct ثم الي Appearance
 
-![](https://cdn-images-1.medium.com/max/1120/1*mH5EPUYJWYNxN-X8pg65yQ.png)
+![](https://github.com/Red-Bugs/Internal-ctf/blob/069c96cbaaff2d79826e8178f1735d71d2cf77b8/Screenshot%202025-12-08%20154649.png)
 
 ثم نذهب الي Editor Theme
 
-![](https://cdn-images-1.medium.com/max/1120/1*p2ktjNE-8XptV1kB_WKEWg.png)
+![](https://github.com/Red-Bugs/Internal-ctf/blob/069c96cbaaff2d79826e8178f1735d71d2cf77b8/Screenshot%202025-12-08%20155152.png)
 
-ثم الي
+ثم الي index.php
 
-![](https://cdn-images-1.medium.com/max/1120/1*tPHWD8UkSwjAoJgaBxMm-Q.png)
+![](https://github.com/Red-Bugs/Internal-ctf/blob/069c96cbaaff2d79826e8178f1735d71d2cf77b8/Screenshot%202025-12-08%20155421.png)
 
 نضع reverse-shell.php في المكان كود php
 
-![](https://cdn-images-1.medium.com/max/1120/1*YTkb6DLasJyQVoxiy6-bFA.png)
+![](https://github.com/Red-Bugs/Internal-ctf/blob/069c96cbaaff2d79826e8178f1735d71d2cf77b8/Screenshot%202025-12-08%20155529.png)
 
-وبعد اما تحط كود php المتعدل نعمل
-
-![](https://cdn-images-1.medium.com/max/1120/1*LjiUSHNTep_RtkbFmleHKA.png)
-
+وبعد اما تحط كود php المتعدل نعمل Update File
 ونروح اي صفحة بيشتغل الكودعليها بعد تجهيز nc
 
 ```
@@ -139,7 +136,7 @@ wpscan --url http://internal.thm/blog/wp-login.php -e u --no-update
 
 وبعد اما نوصل لل reverse-shell ندخل علي opt
 
-![](https://cdn-images-1.medium.com/max/1120/1*A8QrgeeUeK8vwBGMekgSlA.png)
+![](https://github.com/Red-Bugs/Internal-ctf/blob/a3a8f7f8c30c08048f5c1dd45b5aae701cab6318/Screenshot%202025-12-09%20203614.png)
 
 ودي الياسورد و اليوزر للssh فهنسجل دخول علي ssh
 ```
@@ -148,7 +145,7 @@ wpscan --url http://internal.thm/blog/wp-login.php -e u --no-update
 ```
 وبعد الاتصال هنعمل
 
-![](https://cdn-images-1.medium.com/max/1120/1*dvwZo0z8N-vKUwgm71YNfQ.png)
+![](https://github.com/Red-Bugs/Internal-ctf/blob/a3a8f7f8c30c08048f5c1dd45b5aae701cab6318/Screenshot%202025-12-08%20162835.png)
 ```
 aubreanna@internal:~$ cat jenkins.txt                             
 Internal Jenkins service is running on 172.17.0.2:8080    
@@ -163,37 +160,37 @@ aubreanna@internal:~$
 ```
 وبعد كده هنشغل localhost:8080 ولو مشتغلش ادخل علي localhost منغير port
 
-![](https://cdn-images-1.medium.com/max/1120/1*Wr8pfm1DYnJrZhYs44cCUw.png)
+![](https://github.com/Red-Bugs/Internal-ctf/blob/a3a8f7f8c30c08048f5c1dd45b5aae701cab6318/Screenshot%202025-12-08%20164101.png)
 
 وأول حاجه هتيجي في بلناه هي نبحث علي default user Jenkins وهنلاقيه `**admin**`
 
 ونحاول نخمن الباسورد من الBurp Suite بعد تشغيل متصفح ال Burp Suite هنتيع الخطوات دي مع اكيد عمل الطلب بعد الخطوة 1
 
-![](https://cdn-images-1.medium.com/max/1120/1*XqGM3bGLKsVIjJ3EAX6Wbg.png)
+![](https://github.com/Red-Bugs/Internal-ctf/blob/a3a8f7f8c30c08048f5c1dd45b5aae701cab6318/Screenshot%202025-12-08%20165637.png)
 
-![](https://cdn-images-1.medium.com/max/1120/1*KopBXgpxkv-uKDujlgrYNA.png)
+![](https://github.com/Red-Bugs/Internal-ctf/blob/a3a8f7f8c30c08048f5c1dd45b5aae701cab6318/Screenshot%202025-12-08%20165919.png)
 
 في الخطوه 2 هنحدد بعد password= لان الي بعده في الطلب ده password اصلا ونفذ الخطوه 3 ثم 4 وفي 4 هتختار الwordlists و الافضل تبقى rockyou.txt لانها كبييييييييرة وقويه و المسار بتعها هو /usr/share/wordlists/rockyou.txt
 
 وتعمل
 
-![](https://cdn-images-1.medium.com/max/1120/1*UWt557aLcQ6rFZ8dbiWSqw.png)
+![](https://github.com/Red-Bugs/Internal-ctf/blob/a3a8f7f8c30c08048f5c1dd45b5aae701cab6318/Screenshot%202025-12-08%20170853.png)
 
-![](https://cdn-images-1.medium.com/max/1120/1*2vK-RrOGuWgGtEoCEIlLpg.png)
+![](https://github.com/Red-Bugs/Internal-ctf/blob/a3a8f7f8c30c08048f5c1dd45b5aae701cab6318/Screenshot%202025-12-08%20184132.png)
 
 بعد اما تدوس علي length هتلاقي فرق كبير بين الباسورد الصح و الغلط وعمل iog in
 
-![](https://cdn-images-1.medium.com/max/1120/1*smr7mJxonNIeid-UG64ltw.png)
+![](https://github.com/Red-Bugs/Internal-ctf/blob/0fccfe271b64bde9518481bfdf6a75f5e929c504/Screenshot%202025-12-09%20204211.png)
 
 هنروح هنا وبهدين هنا
 
-![](https://cdn-images-1.medium.com/max/1120/1*lYi4vBewLGrLkM_xqZij3A.png)
+![](https://github.com/Red-Bugs/Internal-ctf/blob/0fccfe271b64bde9518481bfdf6a75f5e929c504/Screenshot%202025-12-09%20204243.png)
 
-![](https://cdn-images-1.medium.com/max/1120/1*kFjipdUtMBuqs-hp-WgpvA.png)
+![](https://github.com/Red-Bugs/Internal-ctf/blob/0fccfe271b64bde9518481bfdf6a75f5e929c504/Screenshot%202025-12-09%20204307.png)
 
 هتلاقي اسم لغة البرمجه [Groovy script](http://www.groovy-lang.org) ابحث علي كود لعمل reverse-shell Groovy وحطه هنه بعد التعديل
 
-![](https://cdn-images-1.medium.com/max/1120/1*fdTWRLU5l_qmctB-4PzFpA.png)
+![](https://github.com/Red-Bugs/Internal-ctf/blob/0fccfe271b64bde9518481bfdf6a75f5e929c504/Screenshot%202025-12-09%20204353.png)
 
 وقبل عمل Run شغل nc
 
@@ -205,10 +202,10 @@ listening on [any] 9001 ...
 
 وعمل Run
 
-![](https://cdn-images-1.medium.com/max/1120/1*gqSrK7IxDZX9LSCjGNVVcQ.png)
+![](https://github.com/Red-Bugs/Internal-ctf/blob/aeb9fcd3c0ebce543c2b62204d40a4527261e507/Screenshot%202025-12-09%20205307.png)
 
 وكده حصلت علي root
 
-![](https://cdn-images-1.medium.com/max/1120/1*Bo2cbBgxeI0azl6rs_U8Rg.png)
+![](https://github.com/Red-Bugs/Internal-ctf/blob/912fb2e2911487b88137cccf52c9dc5ab801cf88/Screenshot%202025-12-09%20205307.png)
 
 ثم تهانينا علي الانتهاء
