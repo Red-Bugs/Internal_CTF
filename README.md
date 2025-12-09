@@ -15,7 +15,7 @@ sudo nano /etc/hosts
 
 ![](https://github.com/Red-Bugs/Internal-ctf/blob/72311f2b3961ab492f0f545890cc0c86d5cafc79/Screenshot%202025-12-07%20213626.png)
 
-2.scan
+scan with Nmap
 ```
 ┌──(kali㉿kali)-[~/Downloads/THM]  
 └─$ nmap -sC -sV 10.49.148.219   
@@ -190,4 +190,5 @@ And with that, you obtained root
 ![](https://github.com/Red-Bugs/Internal-ctf/blob/912fb2e2911487b88137cccf52c9dc5ab801cf88/Screenshot%202025-12-09%20205307.png)
 
 Then, congratulations on completing it!
+
 HelloWorld ( ' printf ' ) ;
